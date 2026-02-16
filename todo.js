@@ -5,5 +5,12 @@ var list = document.getElementById("todolist") ;
 
 btn.addEventListener("click" , function(){
   todotext = input.value ; 
-  console.log("task=> " , todotext)
+  console.log("task=> " , todotext) ;
+  var listeditem = document.createElement("li") ; 
+  listeditem.innerText = todotext ; 
+  console.log(listeditem) ;
+  list.appendChild(listeditem) ;
+
+
 })
+
